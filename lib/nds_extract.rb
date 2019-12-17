@@ -12,7 +12,7 @@ def directors_totals(nds)
    
    
    while movie_index < nds[director_index][:movies].length do 
-     total[director] += nds[director][:movies][movie_index][:worldwide_gross]
+     total[director] += nds[director_index][:movies][movie_index][:worldwide_gross]
      movie_index += 1
    end
  
