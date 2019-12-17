@@ -11,12 +11,15 @@ def directors_totals(nds)
    movie_index = 0 
    
    
-   while movie_index < nds[director_index][:movies].length do #Go through movies on each director hash
+   #Go through movies of each diretor totaling gross below
+   
+   while movie_index < nds[director_index][:movies].length do 
      total[director] += nds[director_index][:movies][movie_index][:worldwide_gross]
      movie_index += 1
    end
  
+ # Once finished with all the movies move on to next director
    director_index += 1
  end
-  total 
+  total     
 end
