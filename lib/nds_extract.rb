@@ -11,7 +11,7 @@ def directors_totals(nds)
    movie_index = 0 
    
    
-   #Go through movies of each diretor totaling gross below
+   # Go through movies of each diretor totaling gross below
    
    while movie_index < nds[director_index][:movies].length do 
      total[director] += nds[director_index][:movies][movie_index][:worldwide_gross]
