@@ -8,6 +8,7 @@ def directors_totals(nds)
  while row_index < nds.length do 
    director = directors_database[movie_index]
    total[director] = 0 
+   movie_index = 0 
    
  end
  
