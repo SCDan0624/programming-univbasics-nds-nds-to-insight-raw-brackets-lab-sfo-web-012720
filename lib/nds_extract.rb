@@ -2,10 +2,10 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def directors_totals(nds)
- director_index = 0
- total  = {}
+ director_index = 0  #index to change from director to director
+ total  = {}  #empty hash to add total amount
  
- while director_index < nds.length do 
+ while director_index < nds.length do   #  through directors 
    director = nds[director_index][:name]
    total[director] = 0 
    movie_index = 0 
