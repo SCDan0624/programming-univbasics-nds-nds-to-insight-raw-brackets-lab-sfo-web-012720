@@ -6,7 +6,7 @@ def directors_totals(nds)
  totals  = {}
  
  while row_index < nds.length do 
-   director = directors_database
+   director = directors_database[row_index]
    
  end
  
